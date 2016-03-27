@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html class="no-js">
 	<head>
-		<title>Site da Tidinha</title>
+		<title>Adroaldo Pagliari</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/tablet.css" media="(max-width:600px)">
 		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="(max-width:480px)">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
 		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fone').mask("(99) 9999-9999?9");
+		});
+		</script>
 	</head>
 	<body>
 		<div id="topo"></div>
 		<header>
 			<a href="#topo" title="Home" id="logo">
-				Adroaldo
+				<img src="imgs/menu.png" title="menu" alt="menu">
 			</a>
 			<a href="#" id="btnmenu" title="Mostrar Menu">
 				<img src="imgs/menu2.png" alt="Menu" title="Menu">
@@ -34,26 +42,31 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="banner" class="cycle-slideshow">
-			<img src="imgs/tidinha1.jpg" alt="Banner1" title="Banner1">
-			<img src="imgs/tidinha2.jpg" alt="Banner2" title="Banner2">
+		<div id="banner">
+			<img src="imgs/adroaldo.jpg" alt="logo" title="logo">
 		</div>
 		<div class="box" id="sobre">
 			<div class="container">
 				<h1>Sobre o Adroaldo</h1>
-				<div class="colunas">
+				<div class="profile">
 					<img src="imgs/pro.jpg" alt="Adroaldo" title="Adroaldo" class="redondo">
 				</div>
-				<div class="colunas">
+				<div class="aboutme">
+					<br>
 					<p>
-						balblaksljadkjsduqnwenqjwekjqw
-						ajshdjahsdjahsldasjdklajsdlkajs
-						ajsdhkajshdkjasjkdhaskjhdakjshkd
+						Analista e Desenvolvedor de <i>software full stack</i> há oito anos, atua como Diretor de projetos na <a href="http://www.dopplersistemas.com.br/" title="Doppler Sistemas Ltda">Doppler</a>. Graduado em Ciência da Computação e Especialista em desenvolvimento Web, Dispositivos móveis e Cloud Computing, desenvolve projetos de integração e gestão empresarial.
 					</p>
+					<br>
 					<p>
-						balblaksljadkjsduqnwenqjwekjqw
-						ajshdjahsdjahsldasjdklajsdlkajs
-						ajsdhkajshdkjasjkdhaskjhdakjshkd
+						Cinéfilo, bibliófilo e eterno estudante. Apaixonado por ciência, pretende também seguir carreira acadêmica.
+						Referência pessoal Carl Sagan:
+						<br>
+						<br>
+						<q>Para mim, é muito melhor compreender o universo como ele realmente é do que persistir no engano, por mais satisfatório e tranquilizador que possa parecer.</q>
+					</p>
+					<br>
+					<p>
+						Atua em projetos de pesquisa nas linhas de Web Semântica, Inteligência Artificial, Bancos de Dados, Sistemas Distribuídos e Bioinformática Pós-Genômica. Atua também na área da computação gráfica, com ênfase em processamento de imagens médicas para diagnóstico de patologias - sistemas PACS (Picture Archiving and Communication System).
 					</p>
 				</div>
 			</div>
@@ -66,11 +79,51 @@
 		<div class="box" id="contato">
 			<div class="container">
 				<h1>Entre em Contato</h1>
+				<br>
+				<form class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="email">Email:</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" placeholder="Informe seu e-mail" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="nome">Nome:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="nome" placeholder="Informe seu nome" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="sobrenome">Sobrenome:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="sobrenome" placeholder="Informe seu Sobrenome" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="fone">Telefone:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="fone" placeholder="Digite seu telefone">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="mensagem">Mensagem:</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" id="fone" placeholder="Digite sua mensagem" required></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">Enviar</button>
+						</div>
+					</div>
+				</form>			
 			</div>
 		</div>
 		<footer>
 			<p>Site do Adroaldo - Todos os direitos reservados</p>
 			<p>Desenvolvido por Adroaldo Pagliari</p>
+			<a href="https://www.facebook.com/Adroald0"><i class="fa fa-facebook-official fa-2x"></i></a>
+			<a href="https://twitter.com/adroald0"><i class="fa fa-twitter-square fa-2x"></i></a>			
 		</footer>
 		<script type="text/javascript">
 			$("#btnmenu").click(function(){

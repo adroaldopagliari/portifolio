@@ -5,10 +5,16 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+.container h1 {
+	font: 30px Roboto, Tahoma;
+	text-align: center;
+	font-weight: bold;
+	color: #848688;
+}
 header {
 	width: 100%;
 	padding: 10px 0px 10px 0px;
-	background: #660066;
+	background: #303152;	
 	box-shadow: 1px 1px 5px #CCC;
 	float: left;
 	position: fixed;
@@ -16,13 +22,13 @@ header {
 }
 #logo {
 	float: left;
-	font: 30px Roboto, Tahoma;
+	font: 20px Roboto, Tahoma;
 	color: #FFF;
 	text-decoration: none;
-	margin: 10px;
+	margin: 15px;
 }
 #logo:hover {
-	color: #FFFF00;
+	color: #848688;
 }
 nav {
 	float: right;
@@ -41,8 +47,8 @@ nav ul li a {
 	transition: all 0.5s;
 }
 nav ul li a:hover {
-	background: #FFFF00;
-	color: #660066;
+	/*background: #FFF;*/
+	color: #848688;
 }
 #btnmenu {
 	float: right;
@@ -63,29 +69,51 @@ nav ul li a:hover {
 	padding: 90px 0px 50px 0px;
 	min-height: 400px;
 }
-.container {
+.row {
 	width: 960px;
 	margin: auto;
 }
-h1 {
-	font: 30px Roboto, Tahoma;
-	text-align: center;
-	font-weight: bold;
-	color: #660066;
-}
-p {
+.box p {
 	font: 14px "Open Sans", Verdana;
+	text-align: justify;
+	text-indent: 2em;
+	line-height: 200%;
+	color: #606062;
 }
 #portifolio {
 	background: #DFBFFF;
 }
 footer{
-	background: #660066;
+	background: #303152;
 	float: left;
 	padding: 10px 0px;
 	text-align: center;
 	color: #FFF;
 	width: 100%;
+}
+footer p {
+	font: 14px "Open Sans", Verdana;
+	text-align: center;
+	text-indent: 2em;
+	line-height: 200%;
+}
+footer a {
+	font: 14px "Open Sans", Verdana;
+	text-align: center;
+	text-indent: 2em;
+	line-height: 200%;
+	text-decoration: none;
+	color: #606062;
+}
+.profile {
+	width: 30%;
+	float: left;
+	margin-top: 20px;	 
+}
+.aboutme {
+	width: 70%;
+	float: left;
+	margin-top: 20px;	 
 }
 .colunas {
 	width: 48%;
@@ -97,5 +125,12 @@ footer{
 	float: left;
 }
 .redondo{
-	border-radius: 400px;
+	border-radius: 300px;	 
+}
+q {
+background: #f5f5f5; 
+border-left: 0.8em solid #ccc; 
+border-right: 0.8em solid #ccc; 
+font: italic 100% "Open Sans", Verdana; 
+padding: 0.75em; 
 }
