@@ -67,7 +67,7 @@ nav ul li a:hover {
 	width: 100%;
 	float: left;
 	padding: 90px 0px 50px 0px;
-	min-height: 400px;
+	min-height: 550px;
 }
 .row {
 	width: 960px;
@@ -79,9 +79,6 @@ nav ul li a:hover {
 	text-indent: 2em;
 	line-height: 200%;
 	color: #606062;
-}
-#portifolio {
-	background: #DFBFFF;
 }
 footer{
 	background: #303152;
@@ -115,13 +112,9 @@ footer a {
 	float: left;
 	margin-top: 20px;	 
 }
-.colunas {
-	width: 48%;
-	float: left;
-	margin-top: 20px;	 
-}
-.portifolio {
-	width: 24%;
+#portifolio img {
+	width: 100%;
+	height: 100%;
 	float: left;
 }
 .redondo{
