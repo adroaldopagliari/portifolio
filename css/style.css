@@ -11,6 +11,12 @@
 	font-weight: bold;
 	color: #848688;
 }
+.container h3 {
+	font: 25px Roboto, Tahoma;
+	text-align: left;
+	font-weight: bold;
+	color: #848688;
+}
 header {
 	width: 100%;
 	padding: 10px 0px 10px 0px;
@@ -66,8 +72,8 @@ nav ul li a:hover {
 .box {
 	width: 100%;
 	float: left;
-	padding: 90px 0px 50px 0px;
-	min-height: 550px;
+	padding: 70px 0px 0px 0px;
+	min-height: 500px;
 }
 .row {
 	width: 960px;
@@ -112,9 +118,28 @@ footer a {
 	float: left;
 	margin-top: 20px;	 
 }
+.produto {
+	width: 50%;
+	float: left;
+	margin-top: 20px;	 
+}
+.produtoIMG {
+	width: 40%;
+	float: left;
+	margin-top: 20px;	 
+}
+.produto1 {
+	width: 50%;
+	float: left;
+	margin-top: 20px;	 
+}
+.produtoIMG1 {
+	width: 40%;
+	float: left;
+	margin-top: 20px;	 
+}
 #portifolio img {
-	width: 100%;
-	height: 100%;
+	width: 100%;	
 	float: left;
 }
 .redondo{
